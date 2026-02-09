@@ -1,0 +1,941 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+.container{
+    background-color: rgb(255, 239, 220);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    transition: all 2s;
+}
+
+.box {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    position: relative;
+    transition: all 2s;
+}
+
+.box1 {
+    background-image: linear-gradient(rgb(255, 189, 200), rgb(246, 131, 150));
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(140, 233, 238) 61%, rgba(255, 255, 255, 1) 100%); */
+    /* background-image: url("./Picture/heartfly.gif"); */
+}
+
+audio {
+    height: 50px;
+    margin-top: 50px;
+    color: rgb(246, 131, 150);
+}
+
+.inbox {
+    width: 35%;
+    height: 250px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: 20px;
+    animation-name: fname;
+    animation-timing-function: initial;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-delay: 1s;
+}
+
+
+@keyframes fname {
+    from {
+        transform: translateX(-10px);
+        transform: scale(.5);
+    }
+
+    to {
+        transform: translateX(0px);
+        transform: scale(1);
+    }
+}
+
+.inbox h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', cursive, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    text-shadow: 0px 0px 2px rgb(184, 59, 222);
+}
+
+.ptagh p {
+    position: absolute;
+    font-size: 26px;
+    animation: floatLoop 10s linear infinite;
+    opacity: 0.9;
+    text-shadow: 0 0 12px rgba(255, 105, 180, 0.8);
+}
+
+/* 💕 bottom → top → bottom loop */
+@keyframes floatLoop {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+.h1 {
+    bottom: 15%;
+    left: 42%;
+}
+
+.h2 {
+    bottom: 6%;
+    left: 75%;
+}
+
+.h3 {
+    bottom: 28%;
+    left: 18%;
+}
+
+.h4 {
+    bottom: 10%;
+    left: 60%;
+}
+
+.h5 {
+    bottom: 35%;
+    left: 30%;
+}
+
+.h6 {
+    bottom: 22%;
+    left: 90%;
+}
+
+.h7 {
+    bottom: 40%;
+    left: 12%;
+}
+
+.h8 {
+    bottom: 18%;
+    left: 55%;
+}
+
+.h9 {
+    bottom: 48%;
+    left: 25%;
+}
+
+.h10 {
+    bottom: 8%;
+    left: 95%;
+}
+
+.h11 {
+    bottom: 52%;
+    left: 5%;
+}
+
+.h12 {
+    bottom: 32%;
+    left: 68%;
+}
+
+.h13 {
+    bottom: 14%;
+    left: 35%;
+}
+
+.h14 {
+    bottom: 60%;
+    left: 20%;
+}
+
+.h15 {
+    bottom: 26%;
+    left: 85%;
+}
+
+.h16 {
+    bottom: 44%;
+    left: 45%;
+}
+
+.h17 {
+    bottom: 70%;
+    left: 10%;
+}
+
+.h18 {
+    bottom: 38%;
+    left: 72%;
+}
+
+.h19 {
+    bottom: 12%;
+    left: 50%;
+}
+
+.h20 {
+    bottom: 75%;
+    left: 28%;
+}
+
+.h21 {
+    bottom: 55%;
+    left: 80%;
+}
+
+.h22 {
+    bottom: 20%;
+    left: 15%;
+}
+
+.h23 {
+    bottom: 66%;
+    left: 40%;
+}
+
+.h24 {
+    bottom: 30%;
+    left: 92%;
+}
+
+.h25 {
+    bottom: 82%;
+    left: 18%;
+}
+
+.h26 {
+    bottom: 46%;
+    left: 60%;
+}
+
+.h27 {
+    bottom: 90%;
+    left: 35%;
+}
+
+.h28 {
+    bottom: 58%;
+    left: 70%;
+}
+
+.h29 {
+    bottom: 24%;
+    left: 8%;
+}
+
+.h30 {
+    bottom: 12%;
+    left: 65%;
+}
+
+.h31 {
+    bottom: 95%;
+    left: 50%;
+}
+
+.h32 {
+    bottom: 34%;
+    left: 22%;
+}
+
+.h33 {
+    bottom: 78%;
+    left: 90%;
+}
+
+.h34 {
+    bottom: 18%;
+    left: 33%;
+}
+
+.h35 {
+    bottom: 62%;
+    left: 5%;
+}
+
+.h36 {
+    bottom: 40%;
+    left: 85%;
+}
+
+.h37 {
+    bottom: 88%;
+    left: 15%;
+}
+
+.h38 {
+    bottom: 52%;
+    left: 55%;
+}
+
+.h39 {
+    bottom: 26%;
+    left: 72%;
+}
+
+.h40 {
+    bottom: 8%;
+    left: 25%;
+}
+
+.h41 {
+    bottom: 68%;
+    left: 42%;
+}
+
+.h42 {
+    bottom: 36%;
+    left: 10%;
+}
+
+.h43 {
+    bottom: 92%;
+    left: 78%;
+}
+
+.h44 {
+    bottom: 48%;
+    left: 18%;
+}
+
+.h45 {
+    bottom: 20%;
+    left: 58%;
+}
+
+.h46 {
+    bottom: 74%;
+    left: 95%;
+}
+
+.h47 {
+    bottom: 30%;
+    left: 45%;
+}
+
+.h48 {
+    bottom: 56%;
+    left: 12%;
+}
+
+.h49 {
+    bottom: 16%;
+    left: 88%;
+}
+
+.contbtn {
+    width: 30%;
+    height: 42px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+    background-color: rgb(255, 49, 83);
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(255, 49, 83);
+    box-shadow: 0px 0px 20px rgb(255, 49, 84);
+}
+
+.contbtn a {
+    text-decoration: none;
+    color: rgb(255, 192, 202);
+}
+.bdayimg{
+    width: 40%;
+    height: 400px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    transform: rotateZ(-20deg);
+}
+
+.bdayimg img{
+    width: 100%;
+    height: 100%;
+}
+
+/*------box2------*/
+.box2 {
+    background-color: rgb(255, 239, 220);
+}
+
+.inbox2 {
+    width: 50%;
+    height: 250px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inbox2 h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    text-shadow: 0px 0px 2px rgb(115, 0, 255);
+    color: rgb(255, 51, 15);
+    animation-name: bday;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-delay: 3s;
+    animation-timeline: view();
+    animation-range: entry 20% cover 80%;
+    transform: scale(1.2);
+    animation-fill-mode: forwards;
+}
+
+.inbox2 h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px rgb(237, 65, 108);
+}
+
+.box2.active-page .inbox2 h2 {
+    animation: bday 1.5s ease forwards;
+}
+
+@keyframes bday {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* ------box3----- */
+.box3 {
+    /* background-color: rgb(255, 213, 236); */
+    background-color: rgb(255, 239, 220);
+}
+
+.inbox3 {
+    width: 50%;
+    height: 350px;
+    background-color: beige;
+    background-color: rgb(255, 239, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: inbox3;
+    animation-timing-function: initial;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-range: entry 40% cover 50%;
+    animation-timeline: view();
+    /* margin-bottom: 50px; */
+}
+
+@keyframes inbox3 {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.inbox3 h3 {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: 'Dancing Script', cursive;
+    font-size: 25px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px rgb(237, 65, 108);
+}
+
+.box3.active-page .inbox3 {
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sixbox {
+    width: 100%;
+    height: 200px;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.six1 {
+    width: 100%;
+    height: 45%;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sib1 {
+    width: 32%;
+    height: 70%;
+    background-image: linear-gradient(to right, white, rgb(255, 213, 236));
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 1px rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+/* .sib11 {
+    animation-name: sib11;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    animation-range: entry 40% cover 50%;
+    animation-timeline: view();
+    
+}
+
+@keyframes sib11 {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.sib12 {
+    animation-name: sib12;
+    animation-timing-function: initial;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sib12 {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.sib13 {
+    animation-name: sib13;
+    animation-timing-function: initial;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sib13 {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.sib14 {
+    animation-name: sib14;
+    animation-timing-function: initial;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sib14 {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.sib15 {
+    animation-name: sib15;
+    animation-timing-function: initial;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sib15 {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.sib16 {
+    animation-name: sib16;
+    animation-timing-function: initial;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sib16 {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} */
+
+
+.sixbox {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.six1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.sib1 {
+    width: 30%;
+    height: 60px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.box3.active-page .sib1 {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.box3.active-page .sib1:nth-child(2) { animation-delay: .2s }
+.box3.active-page .sib1:nth-child(3) { animation-delay: .4s }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sib1 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px rgb(237, 65, 108);
+}
+/* ------box4------- */
+.box4 {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: lightblue; */
+    background-color: rgb(255, 239, 220);
+}
+
+.inbox4 {
+    width: 60%;
+    min-height: 550px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 160px;
+}
+
+.inbox4 h2 {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+.imgdiv {
+    width: 80%;
+    height: 90%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.msg{
+    width: 50%;
+    height: 30px;
+    /* background-color: aqua; */
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-shadow: 0px 0px 2px rgb(237, 65, 108);
+}
+
+.imgb1 {
+    width: 30%;
+    height: 270px;
+    background-color: olivedrab;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.imgb1:hover {
+    transform: scale(1.1);
+}
+
+.imgb1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/*------ box5 ------  */
+.box5{
+    background-color: rgb(255, 239, 220);
+}
+.inbox5{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    background-image: url("./Picture/greating\ card");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lorembox{
+    width: 50%;
+    height: 60%;
+    /* background-color: brown; */
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    line-height: 1.5;
+    font-size: 25px;
+    font-style: italic;
+    overflow: hidden;
+    line-height: 1.5;
+    margin-top: -30px;
+}
+#text{
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    text-shadow: 0px 0px 1px rgb(237, 65, 108);
+}
+  /* .box {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #00ffcc;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #00ffcc;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow: hidden;
+  } */
+.lorembox h1{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+/* ------------------------------------------------------------------------------------------------ */
+  @media (max-width: 768px) {
+
+    body {
+        height: auto;
+    }
+
+    .box {
+        height: 100vh;
+        padding: 15px;
+    }
+
+    /* ---------- BOX 1 ---------- */
+    .inbox {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .inbox h3 {
+        font-size: 24px;
+    }
+
+    audio {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .contbtn {
+        width: 70%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .bdayimg {
+        width: 70%;
+        height: auto;
+        top: 10px;
+        left: -20px;
+        transform: rotateZ(-15deg);
+    }
+
+    /* ---------- BOX 2 ---------- */
+    .inbox2 {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .inbox2 h2 {
+        font-size: 26px;
+        transform: scale(1);
+    }
+
+    .inbox2 h5 {
+        font-size: 16px;
+    }
+
+    /* ---------- BOX 3 ---------- */
+    .inbox3 {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .sixbox {
+        height: auto;
+    }
+
+    .six1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sib1 {
+        width: 100%;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    /* ---------- BOX 4 ---------- */
+    .inbox4 {
+        width: 95%;
+        height: auto;
+        margin-top: 210px;
+    }
+
+    .imgdiv {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .imgb1 {
+        width: 90%;
+        height: 200px;
+    }
+    .inbox5{
+        margin-top: 100px;
+    }
+
+    /* ---------- BOX 5 ---------- */
+    .box5{
+        margin-top: 100px;
+    }
+    .lorembox {
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 15%;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .h10{
+        left: 80%;
+    }
+
+    #text {
+        font-size: 20px;
+    }
+
+    .lorembox h1 {
+        font-size: 22px;
+    }
+
+    /* Reduce floating hearts size */
+    .ptagh p {
+        font-size: 18px;
+    }
+    .msg{
+        display: none;
+    }
+
+}
