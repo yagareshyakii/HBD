@@ -937,5 +937,8 @@ audio {
     .msg{
         display: none;
     }
+    .imgb1{
+        width: 80%;
+    }
 
 }
